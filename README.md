@@ -1,4 +1,18 @@
-Comparte Ride
-=============
+# Run project
+```
+docker-compose -f local.yml build
+docker-compose -f local.yml up
+```
+## Monitor containers
+```
+docker-compose -f local.yml ps
+```
+## Run separated django container
 
-Group-bounded, invite-only, carpooling platform
+```
+docker-compose run --rm --service-ports django 
+```
+## Suggested way to run compose commands
+~~~
+docker-compose run --rm django COMMAND 
+~~~
