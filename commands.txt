@@ -1,0 +1,9 @@
+docker-compose -f local.yml build
+docker-compose -f local.yml up
+docker-compose -f local.yml ps
+
+
+docker-compose run --rm --service-ports django # RUN SEPARATED DJANGO CONTAINER 
+
+docker-compose run --rm django COMMAND  # SUGGESTED COMPOSE USE --rm to remove container after COMMAND execution
+
